@@ -11,11 +11,14 @@ body {
 .container {
 	font-size: 12px;
 	color: white;
+	margin: auto;
 }
 
 .col {
 	display: inline-block;
 	vertical-align: top;
+	margin: 10px;
+	width: 30%;
 }
 
 p {
@@ -31,8 +34,7 @@ select {
 	border: lightgray solid;
 	border-width: 1px;
 	color: white;
-	height: 30px;
-	width: 250px;
+	width: 100%;
 }
 
 input {
@@ -41,8 +43,7 @@ input {
 	border: white solid;
 	border-width: 2px;
 	color: white;
-	height: 30px;
-	width: 250px;
+	width: 100%;
 	font-size: 12px;
 
 }
@@ -61,8 +62,7 @@ textarea {
 	border: white solid;
 	border-width: 2px;
 	color: white;
-	height:150px;
-	width: 250px;
+	width: 100%;
 	font-size: 12px;
 
 }
@@ -74,62 +74,19 @@ textarea:focus {
 	transition: .5s all ease;
 }	
 
-#left {
-	margin: 20px;
-	
-}
-
-#middle {
-	margin: 20px;
-	
-}
-
-#right {
-	margin: 20px;
-	
-}
-
-/* PLACEHOLDER SETTINGS */
-
-::-webkit-input-placeholder {
- color: darkslateblue;
- font-style: italic;
-}
-
-::-webkit-textarea-placeholder {
- color: darkslateblue;
- font-style: italic;
-
-:-moz-placeholder { /* older Firefox*/
- color: darkslateblue;
- font-style: italic;
-}
-::-moz-placeholder { /* Firefox 19+ */ 
- color: darkslateblue;
- font-style: italic;
-} 
-:-ms-input-placeholder { 
-color: darkslateblue;
- font-style: italic;
+placeholder {
+	color: aliceblue;
 }
 
 /* MOBILE STYLING */
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 740px) {
     .col {
         display: block;
+		width: 95%;
     }
-   
-    #left {
-        width: 100%;
-    }
-
-    #middle {
-    	width: 100%;
-    }
-
-    #right {
-        width: 100%;
-    }
-
+	
 }
+   
+   
+   
